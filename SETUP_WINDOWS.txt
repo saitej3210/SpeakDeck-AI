@@ -1,0 +1,39 @@
+SPEAKDECK AI — ENHANCED BUILD
+
+1) Extract the ZIP.
+2) Backend terminal:
+   cd backend
+   npm install
+   copy .env.example .env
+   notepad .env
+   Put your Gemini key in GEMINI_API_KEY=...
+   npm start
+
+3) Frontend terminal:
+   cd frontend
+   npm install
+   npm run dev
+
+4) Open:
+   http://localhost:5173
+
+5) For audience QR:
+   - Keep the PC and phone on the same Wi-Fi.
+   - Allow Node/Vite through Windows Firewall when Windows asks.
+   - The presenter generates a LAN IP QR automatically.
+   - The phone joins with /#/join/<code> and the frontend dynamically calls the backend on the same LAN hostname.
+
+6) Image editing:
+   - Open a slide in Editor.
+   - Add image from the left panel or Object menu.
+   - Click image.
+   - Drag to place, drag blue corner to resize.
+   - Use X/Y/W/H/Rotate/Zoom in Inspector.
+   - Use Image crop sliders for crop.
+
+7) Voice:
+   - Use Chrome.
+   - Allow microphone permission.
+   - Click "Continuous voice".
+   - Commands can be chained and repeated without a per-slide command limit.
+   - In Presenter mode, voice commands modify the live slide immediately.
